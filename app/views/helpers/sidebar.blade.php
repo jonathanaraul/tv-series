@@ -1,7 +1,7 @@
 <div class="sidebar" id="sidebar">
 	<div class="sidebar-shortcuts" id="sidebar-shortcuts">
 		<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-			<button class="btn btn-small btn-success" onclick="document.location.href='#';">
+			<button class="btn btn-small btn-success" >
 				<i class="icon-home"></i>
 			</button>
 

@@ -105,7 +105,7 @@
         {{ HTML::script('admin/template/js/jquery.gritter.min.js'); }}
         {{ HTML::script('admin/template/js/ace-elements.min.js'); }}
         {{ HTML::script('admin/template/js/ace.min.js'); }}
-        {{ HTML::script('admin/project/js/genericals.js'); }}
+
 
     <!--ace scripts-->
 
