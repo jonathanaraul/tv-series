@@ -2,7 +2,7 @@
 
 @section ('pageContent')
 
-<div class="main-container container-fluid" id="sinlogin">
+<div class="main-container container-fluid">
 	<a class="menu-toggler" id="menu-toggler" href="#"> <span class="menu-text"></span> </a>
 
 	@include('helpers.sidebar')
@@ -31,7 +31,7 @@
 					<div class="space-6"></div>
 
 					<div class="row-fluid">
-						<div class="span7 infobox-container">
+						<div class="span12 infobox-container">
 							<div class="infobox infobox-green  ">
 								<div class="infobox-icon">
 									<i class="icon-folder-close"></i>

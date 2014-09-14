@@ -11,36 +11,36 @@
       <link rel="shortcut icon" href="{{ asset('favicon_negro.ico') }}">
     <!--basic styles-->
         
-        {{ HTML::style('admin/css/template/bootstrap.min.css'); }}
-        {{ HTML::style('admin/css/template/bootstrap-responsive.min.css'); }}
-        {{ HTML::style('admin/css/template/font-awesome.min.css'); }}
+        {{ HTML::style('admin/template/css/bootstrap.min.css'); }}
+        {{ HTML::style('admin/template/css/bootstrap-responsive.min.css'); }}
+        {{ HTML::style('admin/template/css/font-awesome.min.css'); }}
 
     <!--[if IE 7]>
-        {{ HTML::style('admin/css/template/font-awesome-ie7.min.css'); }}
+        {{ HTML::style('admin/template/css/font-awesome-ie7.min.css'); }}
     <![endif]-->
 
     <!--page specific plugin styles-->
-        {{ HTML::style('admin/css/template/colorbox.css'); }}
+        {{ HTML::style('admin/template/css/colorbox.css'); }}
     <!--fonts-->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
 
     <!--ace styles-->
-        {{ HTML::style('admin/css/template/ace.min.css'); }}
-        {{ HTML::style('admin/css/template/ace-responsive.min.css'); }}
-        {{ HTML::style('admin/css/template/ace-skins.min.css'); }}
+        {{ HTML::style('admin/template/css/ace.min.css'); }}
+        {{ HTML::style('admin/template/css/ace-responsive.min.css'); }}
+        {{ HTML::style('admin/template/css/ace-skins.min.css'); }}
 
     <!--[if lte IE 8]>
-        {{ HTML::style('admin/css/template/ace-ie.min.css'); }}
+        {{ HTML::style('admin/template/css/ace-ie.min.css'); }}
     <![endif]-->
 
     <!--inline styles related to this page-->
-        {{ HTML::style('admin/css/template/jquery-ui-1.10.3.custom.min.css'); }}
-        {{ HTML::style('admin/css/template/chosen.css'); }}
-        {{ HTML::style('admin/css/template/datepicker.css'); }}
-        {{ HTML::style('admin/css/template/bootstrap-timepicker.css'); }}
-        {{ HTML::style('admin/css/template/admin/css/daterangepicker.css'); }}
-        {{ HTML::style('admin/css/template/admin/css/colorpicker.css'); }}
-        {{ HTML::style('admin/css/template/admin/css/jquery.gritter.css'); }}
+        {{ HTML::style('admin/template/css/jquery-ui-1.10.3.custom.min.css'); }}
+        {{ HTML::style('admin/template/css/chosen.css'); }}
+        {{ HTML::style('admin/template/css/datepicker.css'); }}
+        {{ HTML::style('admin/template/css/bootstrap-timepicker.css'); }}
+        {{ HTML::style('admin/template/css/daterangepicker.css'); }}
+        {{ HTML::style('admin/template/css/colorpicker.css'); }}
+        {{ HTML::style('admin/template/css/jquery.gritter.css'); }}
     
     @yield('pageStyles')
 
@@ -72,48 +72,43 @@
 
     <script type="text/javascript">
       
-        {{--  window.jQuery || document.write("{{ HTML::script('admin/js/template/jquery-2.0.3.min.js'); }}");--}}
+        {{--  window.jQuery || document.write("{{ HTML::script('admin/template/js/jquery-2.0.3.min.js'); }}");--}}
     </script>
 
     <!--<![endif]-->
 
     <!--[if IE]>
     <script type="text/javascript">
-    /*window.jQuery || document.write("{{HTML::script('admin/js/template/jquery-1.10.2.min.js');}}");*/
+    /*window.jQuery || document.write("{{HTML::script('admin/template/js/jquery-1.10.2.min.js');}}");*/
     </script>
     <![endif]-->
 
     <script type="text/javascript">
      {{-- if ("ontouchend" in document)
-        document.write("{{ HTML::script('admin/js/template/jquery.mobile.custom.min.js'); }}"); --}}
+        document.write("{{ HTML::script('admin/template/js/jquery.mobile.custom.min.js'); }}"); --}}
     </script>
-    {{ HTML::script('admin/js/template/bootstrap.min.js'); }}
+    {{ HTML::script('admin/template/js/bootstrap.min.js'); }}
 
 
     <!--page specific plugin scripts-->
 
     <!--[if lte IE 8]>
-    {{ HTML::script('admin/js/template/excanvas.min.js'); }}
+    {{ HTML::script('admin/template/js/excanvas.min.js'); }}
     <![endif]-->
 
-        {{ HTML::script('admin/js/template/jquery-ui-1.10.3.custom.min.js'); }}
-        {{ HTML::script('admin/js/template/jquery.ui.touch-punch.min.js'); }}
-        {{ HTML::script('admin/js/template/jquery.slimscroll.min.js'); }}
-        {{ HTML::script('admin/js/template/date-time/bootstrap-datepicker.min.js'); }}
-        {{ HTML::script('admin/js/template/fuelux/fuelux.spinner.min.js'); }}
-        {{ HTML::script('admin/js/template/jquery.maskedinput.min.js'); }}
-        {{ HTML::script('admin/js/template/jquery.gritter.min.js'); }}
-        {{ HTML::script('admin/js/template/ace-elements.min.js'); }}
-        {{ HTML::script('admin/js/template/ace.min.js'); }}
-        {{ HTML::script('admin/js/project/genericals.js'); }}
+        {{ HTML::script('admin/template/js/jquery-ui-1.10.3.custom.min.js'); }}
+        {{ HTML::script('admin/template/js/jquery.ui.touch-punch.min.js'); }}
+        {{ HTML::script('admin/template/js/jquery.slimscroll.min.js'); }}
+        {{ HTML::script('admin/template/js/date-time/bootstrap-datepicker.min.js'); }}
+        {{ HTML::script('admin/template/js/fuelux/fuelux.spinner.min.js'); }}
+        {{ HTML::script('admin/template/js/jquery.maskedinput.min.js'); }}
+        {{ HTML::script('admin/template/js/jquery.gritter.min.js'); }}
+        {{ HTML::script('admin/template/js/ace-elements.min.js'); }}
+        {{ HTML::script('admin/template/js/ace.min.js'); }}
+        {{ HTML::script('admin/project/js/genericals.js'); }}
 
     <!--ace scripts-->
-    <script type="text/javascript">
-      function show_box(id) {
-       $('.widget-box.visible').removeClass('visible');
-       $('#'+id).addClass('visible');
-      }
-    </script>
+
 
     <script type="text/javascript">
       $(function() {
@@ -516,7 +511,7 @@
       });
     </script>
 
-    {{ HTML::script('admin/js/project/listados.js'); }}
+    {{ HTML::script('admin/project/js/listados.js'); }}
     @yield('pagesScriptsBottom')
 
   </body>
