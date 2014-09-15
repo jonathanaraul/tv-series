@@ -30,32 +30,32 @@
 	</div><!--#sidebar-shortcuts-->
 
 	<ul class="nav nav-list">
-
-		<li class="active">
+		<li >
+			<a href="{{ URL::route('home') }}"> <i class="icon-dashboard"></i> <span class="menu-text"> Panel de Control </span> </a>
+		</li>
+		{{--<li class="active">
 			<a href="#" > <i class="icon-key"></i> <span class="menu-text"> Iniciar sesión </span> </a>
 		</li>
 		<li class="active">
 			<a href="#"> <i class="icon-group"></i> <span class="menu-text"> Registro </span> </a>
 		</li>
 	
-		<li >
-			<a href="#"> <i class="icon-dashboard"></i> <span class="menu-text"> Panel de Control </span> </a>
-		</li>
+--}}
 		
        <li class="open">
-			<a href="#" class="dropdown-toggle"> <i class="icon-globe"></i> <span class="menu-text"> NombreCrud </span> <b class="arrow icon-angle-down"></b> </a>
+			<a href="#" class="dropdown-toggle"> <i class="icon-globe"></i> <span class="menu-text"> Pelicula </span> <b class="arrow icon-angle-down"></b> </a>
 
-			<ul class="submenu" >
+			<ul class="submenu" style="display:block">
 				<li >
-					<a href="#"> <i class="icon-double-angle-right"></i> Listado </a>
+					<a href="{{ URL::route('pelicula') }}"> <i class="icon-double-angle-right"></i> Listado </a>
 				</li>
 				<li >
-					<a href="#"> <i class="icon-double-angle-right"></i> Nuevo </a>
+					<a href="{{ URL::route('pelicula.create') }}"> <i class="icon-double-angle-right"></i> Nuevo </a>
 				</li>
 			</ul>
 		</li>
 
-		<li class="active">
+		{{--<li class="active">
 			<a href="#"> <i class="icon-eye-open"></i> <span class="menu-text"> Mi Perfil </span> </a>
 		</li>
 		<li class="active">
@@ -63,7 +63,7 @@
 		</li>
 		<li >
 			<a href="#"> <i class="icon-off"></i> <span class="menu-text"> Cerrar sesión </span> </a>
-		</li>
+		</li>--}}
 	</ul><!--/.nav-list-->
 
 	<div class="sidebar-collapse" id="sidebar-collapse">
